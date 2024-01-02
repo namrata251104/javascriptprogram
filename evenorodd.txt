@@ -1,0 +1,11 @@
+function isEvenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+// Example usage:
+let numberToCheck = 7;
+console.log(isEvenOrOdd(numberToCheck)); // Output: Odd

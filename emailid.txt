@@ -1,0 +1,11 @@
+function isValidEmail(email) {
+    // Regular expression for a simple email validation
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Test the provided email against the regular expression
+    return regex.test(email);
+}
+
+// Example usage:
+let emailToValidate = "namratachaurasiya444@gmail.com";
+console.log(isValidEmail(emailToValidate)); // Output: true

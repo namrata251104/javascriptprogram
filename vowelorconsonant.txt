@@ -1,0 +1,15 @@
+function checkVowelOrConsonant(char) {
+    const lowerChar = char.toLowerCase();
+
+    if (lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar === 'o' || lowerChar === 'u') {
+        return "Vowel";
+    } else if (lowerChar >= 'a' && lowerChar <= 'z') {
+        return "Consonant";
+    } else {
+        return "Not a valid alphabet character";
+    }
+}
+
+// Example usage:
+let characterToCheck = 'A';
+console.log(checkVowelOrConsonant(characterToCheck)); // Output: Vowel

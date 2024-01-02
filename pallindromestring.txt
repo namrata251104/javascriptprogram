@@ -1,0 +1,10 @@
+function isPalindrome(str) {
+    const cleanString = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const reversedString = cleanString.split('').reverse().join('');
+    
+    return cleanString === reversedString;
+}
+
+// Example usage:
+let palindromeCandidate = "A man, a plan, a canal, Panama!";
+console.log(isPalindrome(palindromeCandidate)); // Output: true

@@ -1,0 +1,17 @@
+function isPrimeNumber(number) {
+    if (number <= 1) {
+        return false; // Numbers less than or equal to 1 are not prime
+    }
+
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            return false; // Found a divisor, not a prime number
+        }
+    }
+
+    return true; // No divisors found, it's a prime number
+}
+
+// Example usage:
+let numberToCheck = 13;
+console.log(isPrimeNumber(numberToCheck)); // Output: true
